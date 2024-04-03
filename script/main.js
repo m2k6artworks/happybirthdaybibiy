@@ -66,7 +66,7 @@
                   timerProgressBar: true,
                 }).then( (result) => {
                     document.querySelector('.song').play();
-                    document.getElementById("demo").remove();
+                    document.getElementById("demoOverlay").remove();
                     animationTimeline();
                 })
             }
