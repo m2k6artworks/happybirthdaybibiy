@@ -18,23 +18,25 @@
     });
 }); 
 */
-
-const { value: password } = await Swal.fire({
-  title: "Pesan Rahasia, masukin password nya!",
-  input: "text",
-  inputLabel: "Masukkin password",
-  inputValue,
-  showCancelButton: true,
-  inputValidator: (value) => {
-    if (value != "0414" && value != "414") {
-      return "Clue nya tanggal ultah ibiy + tanggal ultah iban";
+window.addEventListener('load', () => {
+    const { value: password } = Swal.fire({
+      title: "Pesan Rahasia, masukin password nya!",
+      input: "text",
+      inputLabel: "Masukkin password",
+      inputValue,
+      showCancelButton: true,
+      inputValidator: (value) => {
+        if (value != "0414" && value != "414") {
+          return "Clue nya tanggal ultah ibiy + tanggal ultah iban";
+        }
+      }
+    });
+    if (password == "0414" || password == "414") {
+      Swal.fire(`Yeay.. password bener, klik mulai yaah..`);
+        document.querySelector('.song').play();
+        animationTimeline();
     }
-  }
-});
-
-if (password == "0414" || password == "414") {
-  Swal.fire(`Yeay.. password bener, klik mulai yaah..`);
-}
+}); 
 
 
 // animation timeline
