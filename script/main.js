@@ -24,7 +24,7 @@ window.addEventListener('load', async () => {
       title: "Pesan Rahasia, masukin password nya!",
       input: "text",
       inputLabel: "Masukkin password",
-      inputValue,
+      // inputValue,
       showCancelButton: true,
       inputValidator: (value) => {
         if (value != "0414" && value != "414") {
