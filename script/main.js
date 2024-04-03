@@ -21,8 +21,8 @@
 
 // window.addEventListener('load', async () => {
     // Set the date we're counting down to
-    // let countDownDate = new Date("Apr 4, 2024 00:00:00").getTime();
-    let countDownDate = new Date("Apr 3, 2024 22:25:00").getTime();
+    let countDownDate = new Date("Apr 4, 2024 00:00:00").getTime();
+    // let countDownDate = new Date("Apr 3, 2024 22:25:00").getTime();
     
     // Update the count down every 1 second
     const x = setInterval( async () => {
