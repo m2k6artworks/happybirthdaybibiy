@@ -235,9 +235,11 @@ const animationTimeline = () => {
     .staggerFromTo(
         ".baloons img",
         2.5, {
+            scale: .5,
             opacity: 0.9,
             y: 1400,
         }, {
+            scale: .5,
             opacity: 1,
             y: -1000,
         },
@@ -300,7 +302,7 @@ const animationTimeline = () => {
         1.5, {
             visibility: "visible",
             opacity: 0,
-            scale: 80,
+            scale: 20,
             repeat: 3,
             repeatDelay: 1.4,
         },
