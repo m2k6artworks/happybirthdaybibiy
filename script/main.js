@@ -24,7 +24,7 @@
     const countDownDate = new Date("Apr 3, 2024 15:40:00").getTime();
     
     // Update the count down every 1 second
-    const x = setInterval(function() {
+    const x = setInterval( async () => {
 
       // Get today's date and time
       const now = new Date().getTime();
@@ -46,7 +46,7 @@
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "";
-          const { value: password } = Swal.fire({
+          const { value: password } = await Swal.fire({
               title: "Pesan Rahasia, masukin password nya!",
               input: "text",
               inputLabel: "Masukkin password",
