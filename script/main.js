@@ -46,7 +46,7 @@
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "";
-          const { value: password } = await Swal.fire({
+          const { value: password } = Swal.fire({
               title: "Pesan Rahasia, masukin password nya!",
               input: "text",
               inputLabel: "Masukkin password",
