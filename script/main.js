@@ -34,9 +34,9 @@ window.addEventListener('load', async () => {
     });
     if (password == "0414" || password == "414") {
         Swal.fire({
-          title: `Yeay.. password bener, klik mulai yaah..`,
+          title: `Yeay.. password bener, met nonton..`,
           showConfirmButton: false,
-          timer: 2000,
+          timer: 1500,
           timerProgressBar: true,
         }).then( (result) => {
             document.querySelector('.song').play();
