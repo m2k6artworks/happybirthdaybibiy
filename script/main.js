@@ -1,5 +1,5 @@
 // trigger to play music in the background with sweetalert
-window.addEventListener('load', () => {
+/* window.addEventListener('load', () => {
     Swal.fire({
         title: 'Do you want to play music in the background?',
         icon: 'warning',
@@ -16,7 +16,25 @@ window.addEventListener('load', () => {
             animationTimeline();
         }
     });
+}); 
+*/
+
+const { value: password } = await Swal.fire({
+  title: "Pesan Rahasia, masukin password nya!",
+  input: "text",
+  inputLabel: "Masukkin password",
+  inputValue,
+  showCancelButton: true,
+  inputValidator: (value) => {
+    if (value != "0414" && value != "414") {
+      return "Clue nya tanggal ultah ibiy + tanggal ultah iban";
+    }
+  }
 });
+
+if (password == "0414" || password == "414") {
+  Swal.fire(`Yeay.. password bener, klik mulai yaah..`);
+}
 
 
 // animation timeline
