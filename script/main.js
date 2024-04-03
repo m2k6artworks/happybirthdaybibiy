@@ -33,9 +33,15 @@ window.addEventListener('load', async () => {
       }
     });
     if (password == "0414" || password == "414") {
-      Swal.fire(`Yeay.. password bener, klik mulai yaah..`);
-        document.querySelector('.song').play();
-        animationTimeline();
+        Swal.fire({
+          title: `Yeay.. password bener, klik mulai yaah..`,
+          showConfirmButton: false,
+          timer: 2000,
+          timerProgressBar: true,
+        }).then( (result) => {
+            document.querySelector('.song').play();
+            animationTimeline();
+        })
     }
 }); 
 
