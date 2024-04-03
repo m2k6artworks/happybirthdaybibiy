@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+* {
+overflow: hidden !important;
+}
+
 .song {
   visibility: hidden;
 }
@@ -122,15 +126,15 @@ body {
 }
 
 .baloons img:nth-child(even) {
-  left: 30%;
+  left: -40%;
 }
 
 .baloons img:nth-child(odd) {
-  right: 30%;
+  right: -40%;
 }
 
 .baloons img:nth-child(3n + 0) {
-  left: 30%;
+  left: 40%;
 }
 
 .seven, .eight {
