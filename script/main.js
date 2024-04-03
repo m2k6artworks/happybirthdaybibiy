@@ -27,7 +27,7 @@ window.addEventListener('load', async () => {
       // inputValue,
       showCancelButton: true,
       inputValidator: (value) => {
-        if (value != "0414" && value != "414") {
+        if (value != "0414" && value != "414" && value != "18") {
           return "Clue nya tanggal ultah ibiy + tanggal ultah iban";
         }
       }
