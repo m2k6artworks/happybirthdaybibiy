@@ -18,6 +18,7 @@
     });
 }); 
 */
+
 window.addEventListener('load', async () => {
     const { value: password } = await Swal.fire({
       title: "Pesan Rahasia, masukin password nya!",
